@@ -1,0 +1,17 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="card">
+    <div class="card-header header-elements-inline">
+        <h4 class="card-title text-capitalize">@Model.Name</h4>
+    </div>
+    <div class="card-body">
+    @Html.Raw(Model.Description)
+        <p>
+            <a asp-action="index" class="btn btn-dark mt-4">Go to Back</a>
+        </p>
+    </div>
+</div>
+

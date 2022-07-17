@@ -1,0 +1,31 @@
+﻿@using EvTapsiriqiFrontToBack.ViewModels
+@model HomeVM
+
+
+@foreach (Product pro in Model.Products)
+{
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" data-id="@pro.Category.Name">
+        <div class="card"  data-price="@pro.Price">
+            <div class="img">
+                <img class="card-img-top " src="~/img/products/@pro.Image"
+                     alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <p class="text-img">@pro.Name</p>
+                <div class="bottom">
+                    <p class="card-foot add-to-card buy-btn a">
+                        <a asp-controller="Basket" asp-action="AddBasket" asp-route-id="@pro.Id"> Add to cart</a>
+                    </p>
+                </div>
+                <div class="bottom bottom-last">
+                    <p class="card-foot price">
+                        $@pro.Price
+                    </p>
+                </div>
+                <p class="card-foot d-lg-none d-md-block d-sm-block">
+                    $@pro.Price
+                </p>
+            </div>
+        </div>
+    </div>
+}

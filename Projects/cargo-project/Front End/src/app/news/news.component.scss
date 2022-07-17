@@ -1,0 +1,53 @@
+#news-page{
+  background-color: #EBEEF2;
+
+  .owl-next{
+    color: #0870EB!important;
+    background-color: transparent;
+  }
+  .owl-prev{
+    color: #9D9FA1!important;
+    background-color: transparent;
+  }
+  .owl-nav {
+    margin-top: 0;
+    position: absolute;
+    top: -50px;
+    right: 0;
+  }
+  .card{
+    border: 0;
+  }
+  .news-image{
+    height: 215px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .bg-color{
+    background: white;
+    box-shadow: 3px 3px 10px 0 #e3e3e3;
+  }
+  .news{
+    .owl-stage {
+      display: flex;
+    }
+    .owl-item {
+      display: flex;
+      flex: 1 0 auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
+a{
+  text-decoration: none;
+  color: black;
+  &:hover{
+    text-decoration: none;
+    color: black;
+  }
+}
+::ng-deep .mat-tab-label {
+  pointer-events: none;
+}

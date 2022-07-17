@@ -1,0 +1,396 @@
+﻿@model HomeVM
+@{
+    ViewData["Title"] = "A Flower Shop and Florist WooCommerce Theme";
+}
+
+<!-- Main section start -->
+<main>
+    <!-- Section slider start -->
+    <section id="slider">
+        <div class="w-100">
+            <div class="col-8 slider-text">
+                <div class="col-4">
+                    <div class="width-min mb-4">@Html.Raw(@Model.SliderDescription.Title)</div>
+                    <p>
+                        @Model.SliderDescription.Description
+                    </p>
+                    <img src="~/img/slider images/@Model.SliderDescription.Image" alt="">
+                </div>
+            </div>
+            <div class="slider w-100">
+                @foreach (Sliders slider in Model.Sliders)
+                {
+                    <div><img src="~/img/slider images/@slider.Image" alt=""></div>
+                }
+
+            </div>
+        </div>
+    </section>
+    <!-- Section slider end -->
+    <!-- Section filter start -->
+    <section id="filter">
+        <div class=" d-lg-flex d-md-flex d-sm-none d-none filter ">
+            <div class="col-8 pl-0">
+                <ul class="filter-list">
+                    <li class="filter-list-item active-filter" data-id="all">all</li>
+
+                    @foreach (Category ctg in Model.Categories)
+                    {
+
+                        <li class="filter-list-item" data-id="@ctg.Name">@ctg.Name</li>
+                    }
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul class="filter-list float-right">
+                    <li class="dropdown-filter ">
+                        <span class="dropdown-filter-span">
+                            Filter
+                            <i class="fas fa-caret-down ml-2"></i>
+
+                        </span>
+                        <div class="nav-dropdown">
+                            <div class="filter-content">
+                                <div class=" col-5">
+                                    <h4 class="mb-3">Sort By</h4>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                Default
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p> Popularity</p>
+                                        </li>
+                                        <li>
+                                            <p> Newness</p>
+                                        </li>
+                                        <li>
+                                            <p> Price:Low to High</p>
+                                        </li>
+                                        <li>
+                                            <p>Price:High to Low</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class=" col-5">
+                                    <h4 class="mb-3">Price Range</h4>
+                                    <ul>
+                                        <li>
+                                            <p>All</p>
+                                        </li>
+                                        <li>
+                                            <p> $0-$10</p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                $10-$20
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>$20-$30</p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                $30-$40
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                40$
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class=" d-lg-none d-md-none d-sm-flex filter filter-mobile ">
+            <div class="col-6 pl-0">
+
+
+                <ul class="filter-list">
+                    <li class="filter-dropdown">Category <span><i class="fas fa-caret-down"></i></span></li>
+                    <ul class="filter-list-item-dropdown">
+                        <li class="filter-list-item active-filter" data-id="all">all</li>
+                        @foreach (Category ctg in Model.Categories)
+                        {
+
+                            <li class="filter-list-item" data-id="@ctg.Name">@ctg.Name</li>
+                        }
+                    </ul>
+                </ul>
+            </div>
+            <div class="col-6">
+                <ul class="filter-list float-right">
+                    <li class="dropdown-filter filter-dropdown-left">
+                        Filter
+                        <i class="fas fa-caret-down ml-2"></i>
+                        <div class="nav-dropdown">
+                            <div class="filter-content flex-wrap">
+                                <div class="col-12">
+                                    <h4 class="mb-3">Sort By</h4>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                Default
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p> Popularity</p>
+                                        </li>
+                                        <li>
+                                            <p> Newness</p>
+                                        </li>
+                                        <li>
+                                            <p> Price:Low to High</p>
+                                        </li>
+                                        <li>
+                                            <p>Price:High to Low</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class=" col-12">
+                                    <h4 class="mb-3">Price Range</h4>
+                                    <ul>
+                                        <li>
+                                            <p>All</p>
+                                        </li>
+                                        <li>
+                                            <p> $0-$10</p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                $10-$20
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>$20-$30</p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                $30-$40
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                40$
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="products mt-4">
+            <div class="d-flex flex-wrap">
+                <partial name="_ProductPartial"/>   
+            </div>
+        </div>
+    </section>
+    <!-- Section filter end -->
+    <!-- Section valentine start -->
+    <section id="valentine">
+        <!-- Modal -->
+        <div class="modal fade" id="video" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <iframe height="350" src="@Model.ValentineDescriptions.Src" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                     </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="valentive">
+            <div class="row">
+                <div class="col-lg-6  col-md-12 col-sm-12 video">
+                    <div class="img-valentine ">
+                        <img src="~/img/@Model.ValentineDescriptions.Image" width="100%" alt="">
+                        <span class="play"><i class="fas fa-play"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 ">
+                    <div class="texts mb-4">
+                        @Html.Raw(Model.ValentineDescriptions.Title)
+                        @Html.Raw(Model.ValentineDescriptions.Description)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section valentine end -->
+    <!-- Section flower start -->
+    <section id="flower">
+        <div class="flower">
+            <div class="heading">
+                <h1>
+                  @Model.FlowerExperts.Title
+                </h1>
+                <p>
+                    @Model.FlowerExperts.Description
+                </p>
+            </div>
+            <div class="flower-content mt-3">
+                <div class="row m-0">
+                    @foreach (FlowerExpertItem item in Model.FlowerExpertItems)
+                    {
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="card">
+                                <div class="img">
+                                    <img class="card-img-top" src="~/img/team img/@item.Image" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-img">
+                                        @item.Name
+                                    <p class="card-foot ">
+                                        @item.Position
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section flower end -->
+    <!-- Section email start -->
+    <section id="email">
+        <div class="email" style="background-image: url(@Model.EmailSections.Image);">
+            <div class="col-12">
+                <div class="mail-input  ">
+                    <h3 class="">@Model.EmailSections.Title</h3>
+                    <form id="form" class="mt-4 pt-2">
+                        <input id="email-input" type="email" placeholder="Email Addess" required />
+                        <button class="button" id="subscribe-button" type="submit" role="button">SUBCRIBE</button>
+                    </form>
+                    <div class="messages-email mt-5">
+                        <p class="error-email">@Model.EmailSections.ErrorMsg</p>
+                        <p class="succses-email">@Model.EmailSections.SuccesMsg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Blog start -->
+    <section id="blog">
+        <div class="blog">
+            <div class="heading">
+                <h1>@Model.Blogs.Title</h1>
+                <p>
+                    @Model.Blogs.Description
+                </p>
+            </div>
+            <div class="blog-content">
+                <div class="row m-0">
+                    @foreach (BlogItem item in Model.BlogItems)
+                    {
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                            <div class="card">
+                                <div class="img">
+                                    <img class="card-img-top" src="~/img/blog/@item.Image"
+                                         alt="Card image cap">
+                                    <span class="date">@item.PostDate.ToString("dd/MM/yyyy")</span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="text-img">
+                                        @item.Title
+                                    </h5>
+                                    <p class="card-foot ">
+                                        @item.Description
+                                    </p>
+                                </div>
+                            </div>
+                        </div>}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Blog end -->
+    <!-- Section slider-florist start -->
+    <section id="slider-florist">
+        <div class="slider-florist">
+            <div class="row  m-0 mt-5 pt-2 justify-content-center">
+                <div class="col-lg-7 slider-florist-slick mt-5">
+                    @foreach (SliderFlorist item in Model.SliderFlorists)
+                    {
+                        <div class="text-slider">
+                            <img src="~/img/@item.Image" alt="">
+                            <p class="top-text mt-4">
+                                @item.Description
+                            </p>
+                            <p class="text-img mt-3">@item.Name</p>
+                            <p class="card-foot">@item.Position</p>
+                        </div>}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section slider-florist end -->
+    <!-- Section slider instagram start-->
+    <section id="instagram-slider">
+        <div class="instagram-slider">
+            <div class="instagram-slider-slick">
+                <div class="item">
+                    <img src="~/img/blog/blog-feature-img-4.jpg" alt="">
+                    <div class="insta-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/img/blog/blog-feature-img-1.jpg" alt="">
+                    <div class="insta-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/img/blog/blog-feature-img-3.jpg" alt="">
+                    <div class="insta-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/img/blog/blog-feature-img-1.jpg" alt="">
+                    <div class="insta-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/img/blog/blog-feature-img-4.jpg" alt="">
+                    <div class="insta-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/img/blog/blog-feature-img-3.jpg" alt="">
+                    <div class="insta-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/img/blog/blog-feature-img-1.jpg" alt="">
+                    <div class="insta-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="~/img/blog/blog-feature-img-4.jpg" alt="">
+                    <div class="insta-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section slider instagram  end-->
+</main>
+<!-- Main section end -->

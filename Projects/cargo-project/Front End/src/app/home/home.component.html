@@ -1,0 +1,220 @@
+<app-navbar>
+</app-navbar>
+<app-mobile-navbar>
+</app-mobile-navbar>
+<section id="home-banner"  >
+  <div class="home-banner " >
+    <div class="slider "  >
+      <div class="img-box active text-center parallax" data-depth="0.005">
+        <div class="images parallax " data-depth="0.01">
+          <div class="img-bg parallax" data-depth="0.1" >
+            <div class="text layer " data-depth="0.12" >
+              <span class="" >Camex</span>
+              <h2  lang="ka">{{this.title}}</h2>
+            </div>
+          </div>
+          <div class="img-top"  data-depth="0.09"></div>
+          <div class="img-bottom" data-depth="0.09"></div>
+          <div class="cloud img-left visible layer" data-depth="0.25"></div>
+          <div class="cloud img-right visible layer" data-depth="0.25"></div>
+        </div>
+      </div>
+    </div>
+    <span class="tringle left" [ngStyle]="{'border-right':border}"></span>
+    <span class="tringle right" [ngStyle]="{'border-left':border}"></span>
+    <span class="tringle left-bottom" [ngStyle]="{'border-right':border}"></span>
+    <span class="tringle right-bottom" [ngStyle]="{'border-left':border}"></span>
+  </div>
+</section >
+<section id="serviceNcalc" >
+  <div class="container-fluid pl-pr-10 ">
+    <div class="row  p-0">
+      <div class="col-lg-8 col-md-12 col-sm-12 p-0">
+        <div class="services">
+          <span>{{'services'|translate}}</span>
+          <h2 class="mb-5">{{'WeOffer'|translate}}</h2>
+          <div class="row items p-0 m-0">
+            <a routerLink="/services" class="col-lg-3 col-md-4 col-xs-4 col-12 item " >
+              <div class="text-middle mt-icon"><div class="icon m-auto"></div></div>
+              <div class="title">{{'TransportingParsels'|translate}}</div>
+              <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+            </a>
+            <a routerLink="/services" class="col-lg-3 col-md-4 col-xs-4 col-12 item ">
+              <div class="text-middle  mt-icon"><div class="icon m-auto"></div></div>
+              <div class="title">{{'CoopService'|translate}}</div>
+              <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+            </a>
+            <a routerLink="/services" class="col-lg-3 col-md-4 col-xs-4 col-12 item">
+              <div class="text-middle mt-icon"><div class="icon m-auto"></div></div>
+              <div class="title">{{'InsideCityDelivery'|translate}}</div>
+              <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 p-0">
+        <div class="calc">
+          <div class="head d-flex align-items-center text-middle">
+           <div class="icon-main">
+             <div class="icon"></div>
+           </div>
+            <div class="title">{{'calculator'|translate}}</div>
+          </div>
+          <form [formGroup]="Form" novalidate>
+            <div class="box">
+              <div class="row p-0 m-0">
+                <mat-form-field appearance="fill"  class="country">
+                  <mat-label>{{'country'|translate}}</mat-label>
+                  <mat-select formControlName="Country">
+                    <mat-option *ngFor="let country of countries" [value]="country.id"  class="text-capitalize">
+                      {{country.name}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="fill"  class="country">
+                  <mat-label>{{'issOffice'|translate}}</mat-label>
+                  <mat-select formControlName="Office">
+                    <mat-option *ngFor="let office of offices" [value]="office.id"  class="text-capitalize">
+                      {{office.officeNameTranlates[0].name}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <div class="col-lg-6 d-flex p-0 pr-lg-1 ">
+                  <div class="col-12 p-0">
+                    <mat-form-field appearance="fill"  class="lenght">
+                      <mat-label>{{'lengthUnit'|translate}}</mat-label>
+                      <mat-select formControlName="LenghtUnit">
+                        <mat-option  value="1"  class="text-capitalize">
+                          {{'cmUnit'|translate}}
+                        </mat-option>
+                        <mat-option  value="2.54"  class="text-capitalize">
+                          {{'inUnit'|translate}}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="col-lg-6 p-0 d-flex pl-lg-1">
+                  <div class="col-12 p-0 ">
+                    <mat-form-field appearance="fill"  class="weight float-right">
+                      <mat-label>{{'weightUnit'|translate}}</mat-label>
+                      <mat-select formControlName="WeightUnit">
+                        <mat-option  value="1"  class="text-capitalize">
+                          {{'kgUnit'|translate}}
+                        </mat-option>
+                        <mat-option  value="0.453592"  class="text-capitalize">
+                          {{'lbUnit'|translate}}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+              <div class="items d-flex">
+                <div class="col-3 p-0">
+                  <mat-form-field appearance="fill">
+                    <mat-label>{{'Weight'|translate}}</mat-label>
+                    <input formControlName="Weight" type="number" min="0" value="0" matInput >
+                  </mat-form-field>
+                </div>
+                <div class="col-3 p-0">
+                  <mat-form-field appearance="fill">
+                    <mat-label>{{'Length'|translate}}</mat-label>
+                    <input formControlName="Lenght" type="number" min="0" value="0" matInput >
+                  </mat-form-field>
+                </div>
+                <div class="col-3 p-0">
+                  <mat-form-field appearance="fill">
+                    <mat-label>{{'Width'|translate}}</mat-label>
+                    <input formControlName="Width" type="number" min="0" value="0" matInput >
+                  </mat-form-field>
+                </div>
+                <div class="col-3 p-0">
+                  <mat-form-field appearance="fill">
+                    <mat-label>{{'Height'|translate}}</mat-label>
+                    <input formControlName="Height" type="number" min="0" value="0" matInput>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="row p-0">
+                  <div class="col-lg-5 col-sm-6 col-6 text-sm-right text-xs-left">
+                    <span class="cost-title">{{'Approximate'|translate}}</span>
+                    <h4 class="cost">{{total}}$</h4>
+                  </div>
+                  <div class="col-lg-7 col-sm-6 col-6">
+                    <button mat-raised-button [disabled]="!Form.valid" (click)="calc()">{{'calcBtn'|translate}}</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class="tringle left" [ngStyle]="{'border-right':border}"></span>
+  <span class="tringle right" [ngStyle]="{'border-left':border}"></span>
+</section>
+<section id="news" class="mt-5 mb-5"  *ngIf="loaded">
+  <div class="container-fluid pl-pr-10 h-100">
+    <div class="row p-2  h-100 ">
+      <div class="col-lg-4 col-12 p-0 dark item">
+        <a routerLink="/news/{{this.newsArr[0].id}}">
+          <div class="w-100 h-100 d-flex flex-wrap">
+            <div class="img col-lg-12 col-md-6 col-sm-6 col-6 p-0"  [ngStyle]="{'background-image': 'url('+createImgPath(this.newsArr[0].image)+')'}">
+            </div>
+            <div class="col-lg-12 col-md-6 col-sm-6 col-6 p-lg-4 p-xl-4 p-md-3 p-sm-2 p-2 d-flex align-items-center">
+              <div class="title col-12 pl-0 pr-0">
+                <h1>{{this.newsArr[0].newsTranslates[0].title}}</h1>
+                <p [innerHTML]="this.newsArr[0].newsTranslates[0].description.substr(0,95)+'...'"></p>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-6 p-0 h-100 item mob-flex">
+        <a  routerLink="/news/{{this.newsArr[1].id}}" class="col-lg-12 col-md-12 col-12 p-0 mob-pad">
+          <div class="blue-dark">
+            <div class="p-lg-4 p-xl-4 p-md-3 p-sm-2 p-2 h-100 d-flex align-items-center">
+              <div class="title col-12 pl-0 pr-0">
+                <h1>{{this.newsArr[1].newsTranslates[0].title}}</h1>
+                <p [innerHTML]="this.newsArr[1].newsTranslates[0].description.substr(0,135)+'...'"></p>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a  routerLink="/news/{{this.newsArr[2].id}}" class="col-lg-12 col-md-12 col-12 p-0 mob-pad">
+          <div class="blue">
+            <div class="p-lg-4 p-xl-4 p-md-3 p-sm-2 p-2 h-100 d-flex align-items-center">
+              <div class="title col-12 pl-0 pr-0">
+                <h1>{{this.newsArr[2].newsTranslates[0].title}}</h1>
+                <p [innerHTML]="this.newsArr[2].newsTranslates[0].description.substr(0,135)+'...'"></p>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-12 p-0 gray item">
+        <a  routerLink="/news/{{this.newsArr[3].id}}" >
+          <div class="w-100 h-100 d-flex flex-wrap">
+            <div class="img col-lg-12 col-md-6 col-sm-6 col-6 p-0"  [ngStyle]="{'background-image': 'url('+createImgPath(this.newsArr[3].image)+')'}">
+            </div>
+            <div class="col-lg-12 col-md-6 col-sm-6 col-6 p-lg-4 p-xl-4 p-md-3 p-sm-2 p-2 d-flex align-items-center">
+              <div class="title col-12 pl-0 pr-0">
+                <h1>{{this.newsArr[3].newsTranslates[0].title}}</h1>
+                <p [innerHTML]="this.newsArr[3].newsTranslates[0].description.substr(0,95)+'...'"></p>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>
+<app-loader></app-loader>

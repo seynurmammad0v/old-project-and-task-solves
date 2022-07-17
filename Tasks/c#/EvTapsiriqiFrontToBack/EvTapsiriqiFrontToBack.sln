@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvTapsiriqiFrontToBack", "EvTapsiriqiFrontToBack.csproj", "{03C73FDA-7FBA-4184-A873-3D5DA93A70DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03C73FDA-7FBA-4184-A873-3D5DA93A70DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03C73FDA-7FBA-4184-A873-3D5DA93A70DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03C73FDA-7FBA-4184-A873-3D5DA93A70DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03C73FDA-7FBA-4184-A873-3D5DA93A70DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0D0EC71-04A2-4903-9909-E831A6E55661}
+	EndGlobalSection
+EndGlobal

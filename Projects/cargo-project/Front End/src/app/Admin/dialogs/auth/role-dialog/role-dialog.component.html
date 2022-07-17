@@ -1,0 +1,40 @@
+<h1 class="mb-2" mat-dialog-title>
+  <b>Rolu Dəyiş</b>
+</h1>
+<h4 class="mb-1">İstifadəçinin Rolları:
+</h4>
+<p><i>{{data.str.concat()}}</i></p>
+
+<div mat-dialog-content>
+  <mat-form-field class="w-100">
+    <mat-label>Rol seç</mat-label>
+    <mat-chip-list #chipList aria-label="Fruit selection">
+      <mat-chip
+        *ngFor="let roles of myuserRoles"
+        [selectable]="selectable"
+        [removable]="removable"
+        (removed)="remove(roles)">
+        {{roles}}
+        <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+      </mat-chip>
+      <input
+        placeholder="Rol əlavə et"
+        #fruitInput
+        [formControl]="rolesCtrl"
+        [matAutocomplete]="auto"
+        [matChipInputFor]="chipList"
+        [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+        (matChipInputTokenEnd)="add($event)">
+    </mat-chip-list>
+    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+      <mat-option *ngFor="let role of filteredRoles | async" [value]="role">
+        {{role}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions class="w-100 justify-content-end">
+  <button mat-button (click)="onNoClick()" color="warn">Ləğv Et</button>
+  <button mat-button (click)="addRole()" color="primary" cdkFocusInitial>Dəyiş</button>
+</div>
+

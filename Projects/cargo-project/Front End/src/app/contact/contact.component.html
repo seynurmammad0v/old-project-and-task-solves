@@ -1,0 +1,102 @@
+<app-navbar>
+</app-navbar>
+<app-mobile-navbar>
+</app-mobile-navbar>
+<app-banner [name]="'contact'|translate" [bannerSrc]="bannerSrc"></app-banner>
+<section id="contact" class="pt-5 pb-4">
+  <div class="container-fluid pl-pr-10 pt-2 pb-5">
+      <div class="d-flex flex-wrap ">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 p-0 mt-4" *ngFor="let address of offices">
+          <div class="p-4 m-3 bg-color description h-100 d-flex flex-wrap align-content-between rounded">
+            <div class="col-12 p-0">
+              <h2 class="title"><b>{{address.officeNameTranlates[0].name}}</b></h2>
+              <div class="text-capitalize mb-2"><i class="far fa-map-marker-alt"></i> {{'address'|translate}} : <span class="sub">{{address.officeNameTranlates[0].address}}</span></div>
+              <div class="text-capitalize mb-2"><i class="far fa-calendar-alt"></i> {{'WorkTime'|translate}} :<br> <p class="sub p-0 m-0 mt-1" [innerHTML]="address.officeNameTranlates[0].workTime" ></p></div>
+              <div class="text-capitalize mb-2"><i class="far fa-mobile"></i> {{'Phone'|translate}} : <span class="sub">{{address.phoneNumber}}</span></div>
+              <div class="text-capitalize mb-2"><i class="far fa-envelope"></i> {{'Email'|translate}} : <br><div class="sub p-0 m-0 mt-1 w-100" >{{address.email}} </div></div>
+              <div class="text-capitalize mb-2" *ngIf="address.email2!=''"><i class="far fa-envelope"></i> {{'Email'|translate}} : <br><div class="sub p-0 m-0 mt-1 w-100" >{{address.email2}} </div></div>
+            </div>
+            <div class="col-12 p-0"><a href="{{address.url}}" target="_blank"><button mat-raised-button class="w-100" >{{'CheckOnMap'|translate}}</button></a></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="container-fluid pl-pr-10 pt-2 pb-3 ">
+    <form [formGroup]="form" novalidate (ngSubmit)="submit()">
+    <div class="bg-color p-xl-5 p-lg-5 p-md-4 p-sm-4 p-2 pt-4 pb-4 rounded">
+      <div class="d-flex align-items-center pt-4 pb-4 pl-3 "><h1 class="text-uppercase"><b>{{'SendMessage'|translate}}</b></h1></div>
+      <div class="d-flex flex-wrap">
+        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 p-0 d-flex flex-wrap">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <mat-form-field class="w-100">
+              <mat-label>{{'NameNSurname'|translate}}</mat-label>
+              <input type="text" matInput placeholder="Seynur Mammadov" formControlName="FullName">
+              <mat-error  *ngIf="errorHandling('FullName','required')" [innerHTML]="'Required' | translate ">
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <mat-form-field class="w-100">
+              <mat-label>{{'Telephone'|translate}}</mat-label>
+              <span matPrefix>+994 &nbsp;</span>
+              <input type="text" matInput placeholder="559294860" formControlName="PhoneNumber">
+              <mat-error  *ngIf="errorHandling('PhoneNumber','required')" [innerHTML]="'Required' | translate ">
+              </mat-error>
+              <mat-error  *ngIf=" PhoneNumber.errors?.minlength ||PhoneNumber.errors?.maxlength " >
+                {{'PhoneNumberLength' | translate }}
+              </mat-error>
+              <mat-error  *ngIf="errorHandling('PhoneNumber','pattern') " >
+                {{'NumberPattern' | translate }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <mat-form-field class="w-100">
+              <mat-label>{{'Email'|translate}}</mat-label>
+              <input type="email" matInput formControlName="Email" placeholder="camex.example@example.com">
+              <mat-error  *ngIf="errorHandling('Email','email') && !errorHandling('Email','required')">
+                {{'EmailInCorrect' | translate }}
+              </mat-error>
+              <mat-error  *ngIf="errorHandling('Email','required')" [innerHTML]="'Required' | translate ">
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <mat-form-field class="w-100 ">
+              <mat-label>Camex Id</mat-label>
+              <input type="number" matInput min="1" formControlName="CamexId" placeholder="A238743">
+              <mat-error  *ngIf="errorHandling('CamexId','required')" [innerHTML]="'Required' | translate ">
+              </mat-error>
+              <mat-error  *ngIf="errorHandling('CamexId','pattern') " >
+                {{'NumberPattern' | translate }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 text-area">
+          <mat-form-field class="w-100 h-100">
+            <mat-label>{{'DescribeYProbem'|translate}}</mat-label>
+            <textarea matInput placeholder="Your Message" class="h-100" formControlName="Description"> </textarea>
+            <mat-error  *ngIf="errorHandling('Description','required')" [innerHTML]="'Required' | translate ">
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-xl-12 d-flex justify-content-end">
+          <button mat-raised-button class="pt-1 pb-1 pr-5 pl-5 mt-5 col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12" [disabled]="!form.valid" >{{'Send'|translate}}</button>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+  <div class="container-fluid pl-pr-10 pt-2">
+    <div class="bg-color p-4 pl-5 rounded">
+      <div class="form-box" [innerHTML]="this.desc">
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>
+<!--
+<p><b>Təklif və şikayətlərinizlə əlaqədar olaraq müraciət edin:</b> <a href="mailto:qualitycontrol@camex.az" style="color: red"> qualitycontrol@camex.az</a></p>
+<p>Qeyd: həftəiçi 19:00-dan, şənbə günləri 16:00-dan sonra bağlamaların təhvil verilməsi üçün, daşınma haqqı mütləq şəkildə <span style="color:red">ONLAYN</span> ödənilməlidir.</p>
+-->

@@ -1,0 +1,19 @@
+<app-navbar>
+</app-navbar>
+<app-mobile-navbar>
+</app-mobile-navbar>
+<app-banner [name]="'courier'|translate" [bannerSrc]="bannerSrc"></app-banner>
+<section id="courier">
+  <div class="container-fluid  pl-pr-10 pt-5 ">
+      <div class="d-flex flex-wrap">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 mb-5 " *ngFor="let zone of courierData; let i = index">
+           <div class="bg-color  rounded p-4">
+               <h1>{{'Zone'|translate}} {{i+1}}</h1>
+               <p class="text-capitalize">{{zone.courierTranslates[0].name}}</p>
+               <h2 class="font-weight-bold price">{{zone.price}} AZN</h2>
+           </div>
+        </div>
+      </div>
+  </div>
+</section>
+<app-footer></app-footer>

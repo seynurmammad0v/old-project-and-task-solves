@@ -1,0 +1,64 @@
+<mat-sidenav-container autosize >
+  <mat-sidenav #sidenav >
+    <div class="mobile-navbar-slider d-flex justify-content-between align-items-center">
+      <a routerLink="" class="logo white-logo"></a>
+      <i class="fal fa-times close nav-btn" (click)="sidenav.toggle()" (click)=" showScroll()"></i>
+    </div>
+    <div class="nav-item-list">
+      <ul class="mainUL" >
+          <ng-template [ngIf]="loaded" [ngIfElse]="elseBlock">
+            <li   *ngIf="authService.user$ | async as user  else elseBlock">
+              <a  (click)=" showScroll()" *ngIf="userNav.companyName else privateuser" class="username text-capitalize" routerLink="/myprofile" >
+                <ng-template *ngIf="userNav.companyName.length>15 else elseBlock2"> {{userNav.companyName.substr(0,15)}}...</ng-template>
+                <ng-template #elseBlock2>
+                  {{userNav.companyName}}
+                </ng-template>
+              </a>
+              <br>
+              <br>
+              <a (click)=" showScroll()" (click)="logout()" class="mt-3" role="button">{{'LogOut'|translate}}</a>
+              <ng-template #privateuser>
+                <a (click)=" showScroll()"  class="username text-capitalize" routerLink="/myprofile" >{{userNav.name.substr(0,8)+" "+userNav.surname.substr(0,8)}}</a>
+              </ng-template>
+            </li>
+          </ng-template>
+
+
+        <ng-template #elseBlock>
+          <li (click)=" showScroll()">
+            <a routerLink="/login" (click)=" showScroll()">{{'login'|translate}}</a>
+          </li>
+        </ng-template>
+        <li><a routerLink="" (click)=" showScroll()">{{'HomePage'|translate}}</a></li>
+        <li><a routerLink="/shopping" (click)=" showScroll()">{{'shopping'|translate}}</a></li>
+        <li><a routerLink="/tariffs" (click)=" showScroll()">{{'tariffs'|translate}}</a></li>
+        <li><a routerLink="/news" (click)=" showScroll()">{{'news'|translate}}</a></li>
+        <li><a routerLink="/faq" (click)=" showScroll()">{{'FAQ'|translate}}</a></li>
+        <li><a routerLink="/about" (click)=" showScroll()">{{'about'|translate}}</a></li>
+        <li><a routerLink="/contact" (click)=" showScroll()">{{'contact'|translate}}</a></li>
+      </ul>
+      <ul class="d-flex flagUl flex-wrap"  >
+        <li *ngFor="let lang of languages" >
+          <a role="button" class="lang-mobile" (click)="SetLanguage(lang.value)">
+            <div class="flag-mobile">
+              <img width="100%" [src]="lang.flagSrc"  >
+            </div>
+            <span> {{lang.name}}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content >
+   <div class=" justify-content-between align-items-center mobile-navbar-head">
+     <a routerLink="" class="logo"></a>
+     <i class="fal fa-bars open nav-btn" (click)="sidenav.toggle()" (click)="hideScroll()"></i>
+   </div>
+    <ng-content>
+    </ng-content>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+

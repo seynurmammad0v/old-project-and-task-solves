@@ -1,0 +1,304 @@
+﻿@model HomeVM
+@{
+    ViewData["Title"] = "Eduhome - Educational HTML Template";
+    List<string> autors = new List<string>();
+    int count = 0;
+}
+
+
+<!-- Background Area Start -->
+<section id="slider-container" class="slider-area two">
+    <div class="slider-owl owl-theme owl-carousel">
+        @foreach (var item in Model.Sliders)
+        {
+            <!-- Start Slingle Slide -->
+            <div class="single-slide item" style="background-image: url(site/img/slider/@item.Image)">
+                <!-- Start Slider Content -->
+                <div class="slider-content-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="slide-content-wrapper">
+                                    <div class="slide-content text-center">
+                                        <h2>@item.Title</h2>
+                                        <p>@item.ShortDescription</p>
+                                        <a class="default-btn" asp-controller="about" asp-action="index">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Start Slider Content -->
+            </div>
+            <!-- End Slingle Slide -->
+
+        }
+
+    </div>
+</section>
+<!-- Background Area End -->
+<!-- Service Start -->
+<div class="service-area two pt-150 pb-150">
+    <div class="container">
+        <div class="row">
+            @foreach (Teacher item in Model.Teachers)
+            {
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="single-teacher mb-45">
+                        <div class="single-teacher-img">
+                            <a asp-controller="teacher" asp-action="details" asp-route-id="@item.Id"><img src="~/site/img/teacher/@item.Image" alt="teacher"></a>
+                        </div>
+                        <div class="single-teacher-content text-center">
+                            <h2><a asp-controller="teacher" asp-action="details" asp-route-id="@item.Id">@item.Name @item.Surname</a></h2>
+                            <h4>@item.Position</h4>
+                            <ul>
+                                @if (item.Facebook != null)
+                                {
+                                    <li><a target="_blank" href="@item.Facebook"><i class="zmdi zmdi-facebook"></i></a></li>
+                                }
+                                @if (item.Pinterest != null)
+                                {
+                                    <li><a target="_blank" href="@item.Pinterest"><i class="zmdi zmdi-pinterest"></i></a></li>
+                                }
+                                @if (item.Twitter != null)
+                                {
+                                    <li><a target="_blank" href="@item.Twitter"><i class="zmdi zmdi-twitter"></i></a></li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+<!-- About Start -->
+<div class="about-area pb-155">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="about-content">
+                    <h2>@Html.Raw(Model.AboutSections.Title)</h2>
+                    
+                    <p class="hidden-sm">@Model.AboutSections.Description</p>
+                    <a class="default-btn" asp-controller="course" asp-action="index">view courses</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="about-img">
+                    <img src="~/site/img/about/@Model.AboutSections.Image" alt="about">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+<!-- Courses Area Start -->
+<div class="courses-area two pt-150 pb-150 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-title">
+                    <img src="~/site/img/icon/section1.png" alt="section-title">
+                    <h2>COURSES WE OFFER</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            @foreach (Course item in Model.Courses)
+            {
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-course mb-70">
+                        <div class="course-img">
+                            <a asp-controller="course" asp-action="details" asp-route-id="@item.Id">
+                                <img src="~/site/img/course/@item.Image" alt="course">
+                                <div class="course-hover">
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course-content">
+                            <h3><a asp-controller="course" asp-action="details" asp-route-id="@item.Id" class="text-uppercase">@item.Name</a></h3>
+                            <p class="text-capitalize">@item.ShortDescription.Substring(0, item.ShortDescription.Length % 120)...</p>
+                            <a class="default-btn" asp-controller="course" asp-action="details" asp-route-id="@item.Id">read more</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<!-- Courses Area End -->
+<!-- Notice Start -->
+<section class="notice-area two pt-140">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="notice-right-wrapper mb-25 pb-25">
+                    <h3>TAKE A VIDEO TOUR</h3>
+                    <div class="notice-video">
+                        <div class="video-icon video-hover">
+                            <a class="video-popup" href="@Model.NoticeSections.VideoUrl">
+                                <i class="zmdi zmdi-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="notice-left-wrapper">
+                    <h3>notice board</h3>
+                    <div class="notice-left">
+                        @foreach (Notice item in @Model.NoticeSections.Notices)
+                        {
+                        <div class="single-notice-left mb-23 pb-20">
+                            <h4>@item.NoticeTime.ToString("dd, MMMM yyyy")</h4>
+                            <p>@item.NoticeText</p>
+                        </div>
+
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Notice End -->
+<!-- Event Area Start -->
+<div class="event-area two text-center pt-100 pb-145">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-title">
+                    <img src="~/site/img/icon/section.png" alt="section-title">
+                    <h2>UPCOMMING EVENTS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+
+                @foreach (var item in Model.Events)
+                {
+                    if (count % 2 == 0 && count!=0)
+                    {
+                        @Html.Raw("</div>");
+                        @Html.Raw("<div class='col-md-6 col-sm-12 col-xs-12'>");
+                    }
+                    <div class="single-event mb-35">
+                        <div class="event-img">
+                            <a asp-controller="event" asp-action="details" asp-route-id="@item.Id"><img src="~/site/img/event/@item.Image"style="width:300px" alt="event"></a>
+                        </div>
+                        <div class="event-content text-left">
+                            <h3>@item.StartTime.ToString("dd MMMM yyyy")</h3>
+                            <h4><a asp-controller="event" asp-action="details" asp-route-id="@item.Id">@item.Title</a></h4>
+                            <ul>
+                                <li><i class="fa fa-clock-o"></i>@item.StartTime.ToString("h.mm tt") - @item.EndTime.ToString("h.mm tt")</li>
+                                <li><i class="fa fa-map-marker"></i>@item.Venue</li>
+                            </ul>
+                            <div class="event-content-right">
+                                <a class="default-btn" asp-controller="event" asp-action="details" asp-route-id="@item.Id">join now</a>
+                            </div>
+                        </div>
+                    </div>
+                    count++;
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Event Area End -->
+<!-- Testimonial Area Start -->
+<div class="testimonial-area pt-110 pb-105 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="testimonial-owl owl-theme owl-carousel">
+                @foreach (TestimonialSection item in Model.TestimonialSections)
+                {
+                    <div class="col-md-8 col-md-offset-2 col-sm-12">
+
+
+                        <div class="single-testimonial">
+                            <div class="testimonial-info">
+                                <div class="testimonial-img">
+                                    <img src="~/site/img/testimonial/@item.Image" alt="testimonial">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p>@item.ShortDescription</p>
+                                    <h4>@item.Name @item.Surname </h4>
+                                    <h5>@item.Position</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial Area End -->
+<!-- Blog Area Start -->
+<div class="blog-area pt-150 pb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-title text-center">
+                    <img src="~/site/img/icon/section.png" alt="section-title">
+                    <h2>LATEST FROM BLOG</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (Blog item in Model.Blogs)
+            {
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-blog mb-60">
+                        <div class="blog-img">
+                            <a asp-controller="blog" asp-action="details" asp-route-id="@item.Id">
+                                <img src="~/site/img/blog/@item.Image" alt="blog">
+                            </a>
+                            <div class="blog-hover">
+                                <i class="fa fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-top">
+                                <p>
+                                    By
+                                    @{
+                                        foreach (BlogModerator moderator in item.BlogModerators)
+                                        {
+                                            autors.Add(moderator.Moderator.Name);
+                                        }
+                                        <span class="text-capitalize">@string.Join(", ", autors) </span>
+                                        autors.Clear();
+                                    }
+
+                                    /  @item.Created_at.ToString("MMMM dd, yyyy")
+                                </p>
+                            </div>
+                            <div class="blog-bottom">
+                                <h2>
+                                    <a asp-controller="blog" asp-action="details" asp-route-id="@item.Id">
+                                        @item.Name
+                                    </a>
+                                </h2>
+                                <a asp-controller="blog" asp-action="details" asp-route-id="@item.Id">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            }
+        </div>
+    </div>
+</div>
+<!-- Blog Area End -->
+<!-- Subscribe Start -->
+@await Component.InvokeAsync("Subscribe");
+<!-- Subscribe End -->

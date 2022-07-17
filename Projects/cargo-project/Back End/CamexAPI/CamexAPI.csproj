@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210114142441_TranslateTables.cs" />
+    <Compile Remove="Migrations\20210114142441_TranslateTables.Designer.cs" />
+    <Compile Remove="Migrations\20210127223619_fixFloat.cs" />
+    <Compile Remove="Migrations\20210127223619_fixFloat.Designer.cs" />
+    <Compile Remove="Migrations\20210127223751_fixFloat.cs" />
+    <Compile Remove="Migrations\20210127223751_fixFloat.Designer.cs" />
+    <Compile Remove="Migrations\20210127223902_fixFloat.cs" />
+    <Compile Remove="Migrations\20210127223902_fixFloat.Designer.cs" />
+    <Compile Remove="Migrations\20210129163802_cargos.cs" />
+    <Compile Remove="Migrations\20210129163802_cargos.Designer.cs" />
+    <Compile Remove="Migrations\20210129184351_cargosFix2.cs" />
+    <Compile Remove="Migrations\20210129184351_cargosFix2.Designer.cs" />
+    <Compile Remove="Migrations\20210131132416_fixOrder.cs" />
+    <Compile Remove="Migrations\20210131132416_fixOrder.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj" />
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+    <ProjectReference Include="..\Entity\Entity.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Site\images\countries\" />
+    <Folder Include="wwwroot\Site\images\news\" />
+    <Folder Include="wwwroot\Site\images\serviceIcon\" />
+    <Folder Include="wwwroot\Site\images\statements\" />
+  </ItemGroup>
+
+
+</Project>

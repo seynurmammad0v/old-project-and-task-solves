@@ -1,0 +1,109 @@
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.deps.json
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.runtimeconfig.json
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.runtimeconfig.dev.json
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.dll
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.pdb
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.AssemblyInfoInputs.cache
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.AssemblyInfo.cs
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.RazorAssemblyInfo.cache
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.RazorAssemblyInfo.cs
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.RazorTargetAssemblyInfo.cache
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.dll
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.pdb
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.genruntimeconfig.cache
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.csproj.CoreCompileInputs.cache
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.Views.dll
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.Views.pdb
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.TagHelpers.input.cache
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.TagHelpers.output.cache
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.RazorCoreGenerate.cache
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.RazorTargetAssemblyInfo.cs
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.Views.pdb
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.csproj.CopyComplete
+C:\Users\agase\source\repos\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.deps.json
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.runtimeconfig.json
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.runtimeconfig.dev.json
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.dll
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.pdb
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.Views.dll
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.Views.pdb
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.csprojAssemblyReference.cache
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.AssemblyInfoInputs.cache
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.AssemblyInfo.cs
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.csproj.CoreCompileInputs.cache
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.RazorAssemblyInfo.cache
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.RazorAssemblyInfo.cs
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.TagHelpers.input.cache
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.TagHelpers.output.cache
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.RazorCoreGenerate.cache
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.RazorTargetAssemblyInfo.cache
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.RazorTargetAssemblyInfo.cs
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.Views.pdb
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.dll
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.pdb
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.genruntimeconfig.cache
+C:\Users\agase\OneDrive\Рабочий стол\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.csproj.CopyComplete
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.deps.json
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.runtimeconfig.json
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.runtimeconfig.dev.json
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.dll
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.pdb
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.Views.dll
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\bin\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.Views.pdb
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.csprojAssemblyReference.cache
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.AssemblyInfoInputs.cache
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.AssemblyInfo.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.csproj.CoreCompileInputs.cache
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.RazorAssemblyInfo.cache
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.RazorAssemblyInfo.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.TagHelpers.input.cache
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.TagHelpers.output.cache
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.RazorCoreGenerate.cache
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Areas\FiorelloAdmin\Views\Category\Create.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Areas\FiorelloAdmin\Views\Category\Details.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Areas\FiorelloAdmin\Views\Category\Index.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Areas\FiorelloAdmin\Views\Category\Update.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Areas\FiorelloAdmin\Views\DashBoard\Index.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Areas\FiorelloAdmin\Views\Shared\Components\FooterAdmin\Default.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Areas\FiorelloAdmin\Views\Shared\Components\HeaderAdmin\Default.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Areas\FiorelloAdmin\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Areas\FiorelloAdmin\Views\Slider\Create.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Areas\FiorelloAdmin\Views\Slider\Index.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Areas\FiorelloAdmin\Views\Slider\Update.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Areas\FiorelloAdmin\Views\_ViewImports.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Areas\FiorelloAdmin\Views\_ViewStart.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\Basket\Index.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\Product\Index.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Header\Default.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ProductPartial.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_SearchPartial.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.RazorTargetAssemblyInfo.cache
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.RazorTargetAssemblyInfo.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.Views.pdb
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.dll
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.pdb
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.genruntimeconfig.cache
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\EvTapsiriqiFrontToBack.csproj.CopyComplete
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Views\Account\Index.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Areas\FiorelloAdmin\Views\User\Index.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Areas\FiorelloAdmin\Views\User\ChangeRole.cshtml.g.cs
+C:\Users\agase\OneDrive\Рабочий стол\Seynur\EvTapsiriqiFrontToBack\obj\Debug\netcoreapp2.1\Razor\Areas\FiorelloAdmin\Views\User\ResetPassword.cshtml.g.cs

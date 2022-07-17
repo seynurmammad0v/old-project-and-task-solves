@@ -1,0 +1,14 @@
+<app-navbar>
+</app-navbar>
+<app-mobile-navbar>
+</app-mobile-navbar>
+<app-banner [name]="'about'|translate" [bannerSrc]="bannerSrc"></app-banner>
+<section id="about" class="pt-5 pb-5">
+  <div class="container-fluid bg-color pl-pr-10 pt-5 pb-5">
+    <div class="text col-lg-12 col-xs-12 xs-p-0" [innerHTML]="this.desc">
+
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>
+

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e2a3b79f-e3fe-4f4c-9bf9-7e44337100bd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Back End/.vs/AcrhitectureDLL/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/.vs/AcrhitectureDLL/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/.vs/AcrhitectureDLL/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/.vs/AcrhitectureDLL/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Business/bin/Debug/netcoreapp3.1/Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Business/bin/Debug/netcoreapp3.1/Business.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Business/bin/Debug/netcoreapp3.1/Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Business/bin/Debug/netcoreapp3.1/Business.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Business/bin/Debug/netcoreapp3.1/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Business/bin/Debug/netcoreapp3.1/Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Business/bin/Debug/netcoreapp3.1/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Business/bin/Debug/netcoreapp3.1/Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Business/bin/Debug/netcoreapp3.1/DataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Business/bin/Debug/netcoreapp3.1/DataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Business/bin/Debug/netcoreapp3.1/DataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Business/bin/Debug/netcoreapp3.1/DataAccess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Business/bin/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Business/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Business/bin/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Business/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Business/obj/Business.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Business/obj/Business.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Business/obj/Business.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Business/obj/Business.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Business/obj/Debug/netcoreapp3.1/Business.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Business/obj/Debug/netcoreapp3.1/Business.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Business/obj/Debug/netcoreapp3.1/Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Business/obj/Debug/netcoreapp3.1/Business.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Business/obj/Debug/netcoreapp3.1/Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Business/obj/Debug/netcoreapp3.1/Business.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Business/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Business/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Business/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Business/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/Business.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/Business.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/CamexAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/CamexAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/CamexAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/CamexAPI.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/CamexAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/CamexAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/DataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/DataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/DataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/DataAccess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/obj/CamexAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/obj/CamexAPI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/obj/CamexAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/obj/CamexAPI.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/obj/Debug/netcoreapp3.1/CamexAPI.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/obj/Debug/netcoreapp3.1/CamexAPI.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/obj/Debug/netcoreapp3.1/CamexAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/obj/Debug/netcoreapp3.1/CamexAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/obj/Debug/netcoreapp3.1/CamexAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/obj/Debug/netcoreapp3.1/CamexAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/obj/Debug/netcoreapp3.1/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/obj/Debug/netcoreapp3.1/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/CamexAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/CamexAPI/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Core/bin/Debug/netcoreapp3.1/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Core/bin/Debug/netcoreapp3.1/Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Core/bin/Debug/netcoreapp3.1/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Core/bin/Debug/netcoreapp3.1/Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Core/obj/Core.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Core/obj/Core.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Core/obj/Core.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Core/obj/Core.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Core/obj/Debug/netcoreapp3.1/Core.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Core/obj/Debug/netcoreapp3.1/Core.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Core/obj/Debug/netcoreapp3.1/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Core/obj/Debug/netcoreapp3.1/Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Core/obj/Debug/netcoreapp3.1/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Core/obj/Debug/netcoreapp3.1/Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Core/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Core/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Core/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Core/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/DataAccess/bin/Debug/netcoreapp3.1/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/DataAccess/bin/Debug/netcoreapp3.1/Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/DataAccess/bin/Debug/netcoreapp3.1/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/DataAccess/bin/Debug/netcoreapp3.1/Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/DataAccess/bin/Debug/netcoreapp3.1/DataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/DataAccess/bin/Debug/netcoreapp3.1/DataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/DataAccess/bin/Debug/netcoreapp3.1/DataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/DataAccess/bin/Debug/netcoreapp3.1/DataAccess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/DataAccess/bin/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/DataAccess/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/DataAccess/bin/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/DataAccess/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/DataAccess/obj/DataAccess.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/DataAccess/obj/DataAccess.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/DataAccess/obj/DataAccess.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/DataAccess/obj/DataAccess.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/DataAccess/obj/Debug/netcoreapp3.1/DataAccess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/DataAccess/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/DataAccess/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/DataAccess/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/DataAccess/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Entity/bin/Debug/netcoreapp3.1/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Entity/bin/Debug/netcoreapp3.1/Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Entity/bin/Debug/netcoreapp3.1/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Entity/bin/Debug/netcoreapp3.1/Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Entity/bin/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Entity/bin/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Entity/bin/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Entity/bin/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Entity/obj/Debug/netcoreapp3.1/Entity.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Entity/obj/Debug/netcoreapp3.1/Entity.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Entity/obj/Debug/netcoreapp3.1/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Entity/obj/Debug/netcoreapp3.1/Entity.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Entity/obj/Debug/netcoreapp3.1/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Entity/obj/Debug/netcoreapp3.1/Entity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Entity/obj/Entity.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Entity/obj/Entity.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Entity/obj/Entity.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Entity/obj/Entity.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Entity/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Entity/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Entity/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Entity/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Back End/Identity/obj/Debug/netcoreapp3.1/Identity.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Back End/Identity/obj/Debug/netcoreapp3.1/Identity.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/airplane.87d1af2cc4ba8ae38a3c.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/assets/i18n/az.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/front-side/assets/i18n/az.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/assets/i18n/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/front-side/assets/i18n/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/assets/i18n/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/front-side/assets/i18n/ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/assets/image/navbar/logout.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/front-side/assets/image/navbar/logout.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/container.885eefc526ed07563405.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/dist/front-side/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/footer-logo-icon.a50106038944b1affd91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/hanging-scale.9d96c42039c6befd37ed.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/home-banner-bg.7a5d6dad5ef4ff5fc5a9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/home-banner-bottom.d4b0d937f22d48838cc7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/home-banner-left-cloud.93bebffda1b428f0038f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/home-banner-right-cloud.5bf5399e2c5016ae7568.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/home-banner-top.381a90a2007d0626126c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/home-icon.3bbf3b388c6adc01f2f7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/front-side/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/logo.47bc0850731946b6d85d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/main.784034c7692ccb1b2452.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/mob-menu-bg.0e91b6812228b61ccce6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/mob-menu-logo.f2e0d62da8701572991e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/order-deliver.635f21830513bf7db4ce.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/polyfills.07f8425223e9d75b8fb2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/runtime.0e49e2b53282f40c8925.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/scripts.7d536d3103fdc12500b7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/styles.a2e961e7d81fc586c45f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/front-side/styles.b4fd0276c7aaf6f6f259.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1ms2WZSFgc13IO9IF6MvR9ZxM1L" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/Admin" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="ts.external.directory.path" value="C:\Users\Seynur\Desktop\Folders\Projects\cargo-project\Front End\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Seynur\Desktop\Folders\Projects\cargo-project\Front End\src\app\Admin" />
+      <recent name="C:\Users\Seynur\Desktop\Folders\Projects\cargo-project\Front End\src\app\Admin\@theme" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Seynur\Desktop\Folders\Projects\cargo-project\Front End\src" />
+      <recent name="C:\Users\Seynur\Desktop\Folders\Projects\cargo-project\Front End\src\app\Core\services\Admin" />
+      <recent name="C:\Users\Seynur\Desktop\Folders\Projects\cargo-project\Front End\src\app\Core\services\Admin\Shop" />
+      <recent name="C:\Users\Seynur\Desktop\Folders\Projects\cargo-project\Front End\src\app\Admin\dialogs\order" />
+      <recent name="C:\Users\Seynur\Desktop\Folders\Projects\cargo-project\Front End\src\app\Core\services\UserOrder" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2a3b79f-e3fe-4f4c-9bf9-7e44337100bd" name="Default Changelist" comment="" />
+      <created>1610268013439</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610268013439</updated>
+      <workItem from="1610268016004" duration="2473000" />
+      <workItem from="1610533750666" duration="1308000" />
+      <workItem from="1610623131298" duration="24352000" />
+      <workItem from="1610706172046" duration="24500000" />
+      <workItem from="1610879475570" duration="11137000" />
+      <workItem from="1610969239001" duration="14876000" />
+      <workItem from="1611057113956" duration="26255000" />
+      <workItem from="1611230071720" duration="17388000" />
+      <workItem from="1611309646865" duration="22297000" />
+      <workItem from="1611395182143" duration="20270000" />
+      <workItem from="1611475136620" duration="2011000" />
+      <workItem from="1611478402918" duration="5162000" />
+      <workItem from="1611483797325" duration="4351000" />
+      <workItem from="1611488279081" duration="13987000" />
+      <workItem from="1611573788381" duration="24953000" />
+      <workItem from="1611645331051" duration="20943000" />
+      <workItem from="1611682393459" duration="13758000" />
+      <workItem from="1611738628558" duration="37607000" />
+      <workItem from="1611831878277" duration="14327000" />
+      <workItem from="1611924107519" duration="22814000" />
+      <workItem from="1612000550672" duration="30705000" />
+      <workItem from="1612096716313" duration="23507000" />
+      <workItem from="1612131770938" duration="209000" />
+      <workItem from="1612178928647" duration="4782000" />
+      <workItem from="1612185553027" duration="13567000" />
+      <workItem from="1612205917051" duration="11289000" />
+      <workItem from="1612265349217" duration="26657000" />
+      <workItem from="1612337359116" duration="1241000" />
+      <workItem from="1612438362837" duration="29062000" />
+      <workItem from="1612528419186" duration="22169000" />
+      <workItem from="1612611433238" duration="25940000" />
+      <workItem from="1612699535262" duration="35592000" />
+      <workItem from="1612789320483" duration="32126000" />
+      <workItem from="1612880256383" duration="33965000" />
+      <workItem from="1612957884237" duration="19495000" />
+      <workItem from="1613322117345" duration="4394000" />
+      <workItem from="1613333595169" duration="43000" />
+      <workItem from="1613554165088" duration="395000" />
+      <workItem from="1614108090240" duration="95000" />
+      <workItem from="1614108258239" duration="12000" />
+      <workItem from="1615898558130" duration="793000" />
+      <workItem from="1617026218682" duration="145000" />
+      <workItem from="1617966044060" duration="664000" />
+      <workItem from="1618390160040" duration="5236000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/register/register.component.ts</url>
+          <line>148</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/login/login.component.html</url>
+          <line>29</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/Core/services/login/login.service.ts</url>
+          <line>90</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/myprofile/dialogs/statement-dialog/statement-dialog.component.html</url>
+          <line>109</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/myprofile/statements/statements.component.html</url>
+          <line>4</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/myprofile/orders/orders.component.html</url>
+          <line>10</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/Admin/users/users.component.ts</url>
+          <line>90</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/Admin/countries-all/country-info/country-info.component.ts</url>
+          <line>86</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/Admin/dialogs/office/update-office/update-office.component.ts</url>
+          <line>76</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/myprofile/statements/statements.component.html</url>
+          <line>10</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/myprofile/statements/statements.component.ts</url>
+          <line>32</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/Admin/users/user-orders/user-orders.component.html</url>
+          <line>13</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/Admin/dialogs/cargo/add-to-anbar/add-to-anbar.component.html</url>
+          <line>8</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/myprofile/in-anbar/in-anbar.component.html</url>
+          <line>9</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/Admin/dialogs/add-statement-to-anbar/add-statement-to-anbar.component.html</url>
+          <line>43</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/Admin/countries-all/country-tariff/country-tariff.component.ts</url>
+          <line>115</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/Admin/news-admin/news-admin.component.ts</url>
+          <line>30</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/Admin/news-admin/news-admin.component.ts</url>
+          <line>50</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/myprofile/user-settings/user-settings.component.ts</url>
+          <line>37</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/myprofile/user-settings/user-settings.component.ts</url>
+          <line>134</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/myprofile/orders/orders.component.html</url>
+          <line>13</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/restore-password/restore-password.component.html</url>
+          <line>14</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/Admin/dialogs/country/country-edit-dialog/country-edit-dialog.component.html</url>
+          <line>4</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/Admin/bio/bio.component.html</url>
+          <line>11</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/Admin/bio/bio.component.html</url>
+          <line>9</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/Admin/about-us/about-us.component.html</url>
+          <line>9</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

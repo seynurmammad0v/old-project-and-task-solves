@@ -1,0 +1,49 @@
+﻿@model List<TestimonialSection>
+@{
+    ViewData["Title"] = "Admin Panel - Testimonial List ";
+    ViewData["TitleNavbar"] = " Testimonial List ";
+}
+<!-- State saving -->
+<div class="card">
+    <div class="card-header header-elements-inline">
+        <h5 class="card-title">Testimonial List</h5>
+    </div>
+    <table class="table category-datatable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Image</th>
+                <th class="text-right">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (TestimonialSection item in Model)
+            {
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Surname
+                </td>
+                <td>
+                    <img src="~/site/img/testimonial/@item.Image" alt="Alternate Text" width="150" />
+                </td>
+                <td class="text-right">
+                    <div class="list-icons">
+                        <a asp-action="update" asp-route-id="@item.Id" class="list-icons-item text-primary-600"><i class="icon-pencil7"></i></a>
+                        <a class="list-icons-item text-danger-600 delete" data-id="@item.Id"><i class="icon-trash"></i></a>
+                    </div>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section ThemeScript{
+    <script src="~/Admin/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script src="~/Admin/global_assets/js/plugins/notifications/sweet_alert.min.js"></script>
+}
+<!-- /state saving -->

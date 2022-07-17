@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "ChangeRole";
+}
+
+<p class="text-capitalize">FullName: @Model.FullName</p>
+<p class="text-capitalize">Email: @Model.Email</p>
+<p class="text-capitalize">Username: @Model.UserName</p>
+<p class="text-capitalize">Role: @Model.Role</p>
+@if(TempData["error"]!=null){
+<div>@TempData["error"]</div>
+
+}
+<form method="post">
+    @foreach (string item in Model.Roles)
+    {
+        @if (Model.Role == item)
+        {
+            <input type="radio" name="role" value="@item" checked />
+        }
+        else
+        {
+            <input type="radio" name="role" value="@item" />
+        }
+        <label> @item</label>
+
+
+    }
+    <button type="submit" class="btn btn-success">Save</button>
+</form>

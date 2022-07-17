@@ -1,0 +1,73 @@
+#register{
+  background-color: #EBEEF2;
+  .bg-color{
+    background: white;
+    margin-top: 30px;
+    box-shadow: 3px 3px 20px 0px #bababa;
+  }
+  .mat-tab-label{
+    height: auto;
+    padding-top:20px;
+    padding-bottom:20px;
+      justify-content: start;
+  }
+  .mat-form-field-flex{
+    background-color: rgba(0,0,0,.04);
+    border-radius: 4px 4px 0 0;
+    padding: .75em .75em 0 .75em;
+    }
+  .reg-button{
+    outline: 0;
+    white-space: normal;
+    line-height: 20px;
+    padding: 10px 30px;
+    background-color: #3179ce;
+    color: white;
+  }
+  .mat-checkbox-label{
+    white-space: normal;
+  }
+  .passport{
+    width: 75%;
+  }
+  .mat-button-disabled{
+    background-color: #5E5F61!important;
+  }
+  .mat-form-field-wrapper {
+    margin-bottom: 7px;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+button{
+  outline: 0!important;
+}
+@media (min-width: 576px) {
+  .label-head {
+    font-size: 14px;
+  }
+}
+.mat-tab-header-pagination-controls-enabled .mat-tab-header-pagination {
+  display: none!important;
+}
+@media (min-width: 768px) {
+  .label-head {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .label-head {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .label-head {
+    font-size: 25px;
+  }
+}
+

@@ -1,0 +1,102 @@
+<div *ngIf="loaded" class="w-100 d-flex flex-wrap">
+  <div class="col-12" id="in-anbar">
+    <div class="top-statement d-flex justify-content-between align-items-center">
+      <span class="m-0 pl-3 title">{{'Parcels'|translate}}</span>
+    </div>
+    <div class="style content-panel mt-4">
+      <div class="table-angular ">
+        <mat-form-field>
+          <mat-label class="filter">{{'Filter'|translate}}</mat-label>
+          <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+        </mat-form-field>
+        <div class="scroll">
+          <table mat-table [dataSource]="dataSource" matSort>
+            <!-- Checkbox Column -->
+            <ng-container matColumnDef="select" >
+              <th mat-header-cell  *matHeaderCellDef >
+                <mat-checkbox style="padding-left: 21px;"  color="primary" (change)="$event ? masterToggle() : null"
+                              [checked]="selection.hasValue() && isAllSelected()"
+                               (change)="log()"
+                              [indeterminate]="selection.hasValue() && !isAllSelected()"
+                              [aria-label]="checkboxLabel()">
+                </mat-checkbox>
+              </th>
+              <td mat-cell style="padding-left: 12px;"    *matCellDef="let row">
+                <mat-checkbox *ngIf="!row.paymentStatus"  color="primary" (click)="$event.stopPropagation()"
+                                (change)="$event ? selection.toggle(row) : null"
+                                (change)="log()"
+                              [checked]="selection.isSelected(row)"
+                              [aria-label]="checkboxLabel(row)">
+                </mat-checkbox>
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="track">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> {{'Track'|translate}} </th>
+              <td mat-cell *matCellDef="let row"> {{row.track}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>{{'SiteNMag'|translate}}</th>
+              <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+            </ng-container>
+            <ng-container matColumnDef="weight">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> {{'Weight'|translate}} </th>
+              <td mat-cell *matCellDef="let row"> {{row.weight}} </td>
+            </ng-container>
+            <ng-container matColumnDef="status">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> {{'Status'|translate}} </th>
+              <td mat-cell *matCellDef="let row">
+              <span *ngIf="row.status.name=='InAnbar' else else1"> {{'InAnbar'|translate}}</span>
+                <ng-template #else1>
+                  <span *ngIf="row.status.name=='InСustoms' else else2"> {{'InСustoms'|translate}}</span>
+                  <ng-template #else2>
+                    <span *ngIf="row.status.name=='InOffice' else else3"> {{'InOffice'|translate}}</span>
+                    <ng-template #else3>
+                      <span > {{'InWay'|translate}}</span>
+                    </ng-template>
+                  </ng-template>
+                </ng-template>
+              </td>
+            </ng-container>
+            <ng-container matColumnDef="price">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>{{'CamexPrice'|translate}} </th>
+              <td mat-cell *matCellDef="let row" > {{row.camexPrice}} USD</td>
+            </ng-container>
+            <ng-container matColumnDef="office">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> {{'Destination'|translate}} </th>
+              <td mat-cell *matCellDef="let row" > {{row.office.officeNameTranlates[0].name}} </td>
+            </ng-container>
+            <ng-container matColumnDef="actions">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> {{'Actions'|translate}} </th>
+              <td mat-cell *matCellDef="let row" class="">
+                <div class="buttons"  *ngIf="row.status.name == 'InAnbar'">
+                  <button mat-icon-button  color="primary" (click)="openDialogEdit(row)" > <mat-icon style="font-size: 22px ">edit</mat-icon></button>
+                </div>
+              </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            <tr class="mat-row" *matNoDataRow>
+              <td class="mat-cell"  colspan="12"> {{'DataNotFound'|translate}}</td>
+            </tr>
+          </table>
+        </div>
+        <div *ngIf="balanceDisplay" class=" mt-3 pr-2 pl-2 foot-price d-flex justify-content-between align-items-center">
+            <span class="m-0 pl-3 ">{{"count"|translate}}
+              {{this.count}}
+            </span>
+          <div class="d-flex">
+            <div class="mr-4 d-flex justify-content-between align-items-center">
+              <i class="fad fa-wallet mr-2" style="font-size: 20px;color: #2F6BB7"></i>
+              {{this.totalPrice}} $
+            </div>
+            <button mat-raised-button (click)="pay(this.totalPrice)">{{'BalancePay'|translate}}</button>
+          </div>
+        </div>
+          <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+      </div>
+
+    </div>
+  </div>
+</div>

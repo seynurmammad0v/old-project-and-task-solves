@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210111205954_UserSystemFixx.cs" />
+    <Compile Remove="Migrations\20210111205954_UserSystemFixx.Designer.cs" />
+    <Compile Remove="Migrations\20210126141543_Fix2.0.cs" />
+    <Compile Remove="Migrations\20210126141543_Fix2.0.Designer.cs" />
+    <Compile Remove="Migrations\20210126141810_Fix2.0.cs" />
+    <Compile Remove="Migrations\20210126141810_Fix2.0.Designer.cs" />
+    <Compile Remove="Migrations\20210126142133_Fix2.0.cs" />
+    <Compile Remove="Migrations\20210126142133_Fix2.0.Designer.cs" />
+    <Compile Remove="Migrations\20210126142320_Fix2.0.cs" />
+    <Compile Remove="Migrations\20210126142320_Fix2.0.Designer.cs" />
+    <Compile Remove="Migrations\20210126143607_Fix2.0.cs" />
+    <Compile Remove="Migrations\20210126143607_Fix2.0.Designer.cs" />
+    <Compile Remove="Migrations\20210126165342_CounryAdressesActionsRequired.cs" />
+    <Compile Remove="Migrations\20210126165342_CounryAdressesActionsRequired.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\Entity\Entity.csproj" />
+  </ItemGroup>
+
+</Project>

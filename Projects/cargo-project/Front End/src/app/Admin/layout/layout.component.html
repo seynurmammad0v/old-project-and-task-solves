@@ -1,0 +1,246 @@
+<div class="toolbar-container" id="layout" [class.toolbar-mobile]="mobileQuery.matches" >
+  <mat-toolbar  class="toolbar">
+    <div class="col-lg-2 col-md-3 col-sm-6 col-6 p-0">
+      <h1 class="logo ml-3 text-uppercase"><img [src]="logoSrc" width="130" alt=""></h1>
+    </div>
+    <div class="col-lg-8 col-md-7 d-md-block p-0 d-sm-none d-none">
+      <button mat-icon-button class="d-md-block d-sm-none d-none ml-3" (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+    </div>
+  <div class="logout col-lg-2 col-md-2 col-sm-6 col-6 d-flex justify-content-end   ">
+    <button mat-icon-button routerLink="/home" class="mr-2"><i class="fad fa-home" style="font-size: 16px"></i> </button>
+    <button mat-icon-button class="d-md-block d-sm-none d-none"  (click)="logout()"><i class="far fa-power-off" style="font-size: 16px"></i></button>
+    <button mat-icon-button class="d-md-none d-sm-block d-block" (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+  </div>
+  </mat-toolbar>
+<div style="height: 55px; width: 100%; display: none" class="nav-line"></div>
+  <mat-sidenav-container class="sidenav-container">
+
+    <mat-sidenav  style="transform: none; visibility: visible;" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                 [fixedInViewport]="mobileQuery.matches"  fixedTopGap="56">
+      <div class="w-100 background-image">
+        <div class="d-flex align-items-center flex-column pt-4 ">
+         <div *ngIf="loaded" class="d-flex align-items-center flex-column ">
+           <div class="profile-img mb-4"  [ngStyle]="{'background-image': 'url('+createImgPath(userNav.image)+')'}"></div>
+           <div class="info text-center mb-3" >
+             <p class="m-0 mb-2">
+                <span  *ngIf="userNav.companyName else privateuser" class="username text-capitalize">
+                  <span *ngIf="userNav.companyName.length>15 else elseBlock2"> {{userNav.companyName.substr(0,15)}}...</span>
+                  <ng-template #elseBlock2>
+                    <span > {{userNav.companyName}}</span>
+                  </ng-template>
+                </span>
+               <ng-template #privateuser>
+                 <span  class="username text-capitalize"  >{{userNav.name.substr(0,8)+" "+userNav.surname.substr(0,8)}}</span>
+               </ng-template>
+             </p>
+           </div>
+         </div>
+          <div class="myaccount mt-1">
+            <mat-accordion>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header  >
+                  <mat-panel-title>
+                    <div class="w-100 mr-5 d-flex align-items-center">
+                      <i class="far fa-user mr-2"></i>   Mənim Hesabım
+                    </div>
+                  </mat-panel-title>
+                </mat-expansion-panel-header >
+                  <div class="mat-expansion-panel-content active" id="active"  >
+            <!--        <mat-list-item routerLink="[child.route]">
+                      <div class="white">
+                        Tənzimləmələr
+                      </div>
+                    </mat-list-item>-->
+                    <mat-list-item (click)="logout()" role="button">
+                      <div class="white">
+                        Çıxış
+                      </div>
+                    </mat-list-item>
+                  </div>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+        </div>
+      </div>
+      <mat-nav-list>
+<!--        <mat-list-item routerLink="/admin/dashboard">
+          <div class="slidenav-item">
+            <i class="far fa-chart-line mr-2"></i>
+            Dashboard
+          </div>
+        </mat-list-item>-->
+        <mat-list-item routerLink="/admin/users">
+          <div class="slidenav-item">
+            <i class="far fa-users mr-2"></i>
+            İstifadəçilər
+          </div>
+        </mat-list-item>
+       <mat-accordion>
+            <mat-expansion-panel >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <div class="slidenav-item">
+                    <i class="far fa-browser mr-2"></i>  Əməliyyatlar
+                  </div>
+
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+             <div class="active" id="active3">
+               <mat-list-item (click)="open()">
+                 <div  class="slidenav-item">
+                   Təzə bağlama əlavə et
+                 </div>
+               </mat-list-item>
+               <mat-list-item routerLink="/admin/order-in-process">
+                 <div  class="slidenav-item">
+                   Hazırlanan sifarişlər
+                 </div>
+               </mat-list-item>
+               <mat-list-item routerLink="/admin/order-processed">
+                 <div  class="slidenav-item">
+                   Hazır sifarişlər
+                 </div>
+               </mat-list-item>
+               <mat-list-item routerLink="/admin/statements">
+                 <div  class="slidenav-item">
+                   Beyanatlar
+                 </div>
+               </mat-list-item>
+             </div>
+
+            </mat-expansion-panel>
+          </mat-accordion>
+        <mat-accordion>
+          <mat-expansion-panel >
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <div class="slidenav-item">
+                  <i class="far fa-boxes mr-2"></i>  Bağlamanın statusu
+                </div>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+             <div class="active" id="active2">
+               <mat-list-item  routerLink="/admin/parcels/InAnbar" >
+                 <div  class="slidenav-item">
+                   Anbarda Olan
+                 </div>
+               </mat-list-item>
+               <mat-list-item routerLink="/admin/parcels/InWay" >
+                 <div  class="slidenav-item">
+                   Yolda Olan
+                 </div>
+               </mat-list-item>
+               <mat-list-item routerLink="/admin/parcels/InСustoms" >
+                 <div  class="slidenav-item">
+                   Gömrük yoxlanışında olan
+                 </div>
+               </mat-list-item>
+               <mat-list-item routerLink="/admin/parcels/InOffice" >
+                 <div  class="slidenav-item">
+                   Ofisdə olan
+                 </div>
+               </mat-list-item>
+               <mat-list-item routerLink="/admin/parcels/end" >
+                 <div  class="slidenav-item">
+                   Bitən
+                 </div>
+               </mat-list-item>
+             </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion>
+          <mat-expansion-panel >
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <div class="slidenav-item">
+                  <i class="far fa-sitemap mr-2"></i> Saytın CRUD-du
+                </div>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="active" id="active4">
+              <mat-list-item routerLink="/admin/countries">
+                <div class="slidenav-item">
+                  Ölkələr
+                </div>
+              </mat-list-item>
+              <mat-list-item routerLink="/admin/cities">
+                <div class="slidenav-item">
+                  Şəhərlər
+                </div>
+              </mat-list-item>
+              <mat-list-item routerLink="/admin/offices">
+                <div class="slidenav-item">
+                  Ofislər
+                </div>
+              </mat-list-item>
+              <mat-list-item routerLink="/admin/shops">
+                <div class="slidenav-item">
+                  Maqazinlər
+                </div>
+              </mat-list-item>
+              <mat-list-item routerLink="/admin/courier-service">
+                <div class="slidenav-item">
+                  Kuryer servisi
+                </div>
+              </mat-list-item>
+              <mat-list-item routerLink="/admin/service">
+                <div class="slidenav-item">
+                  Servislər
+                </div>
+              </mat-list-item>
+              <mat-list-item routerLink="/admin/faq">
+                <div class="slidenav-item">
+                  FAQ
+                </div>
+              </mat-list-item>
+              <mat-list-item routerLink="/admin/news">
+                <div  class="slidenav-item">
+                  Xəbərlər
+                </div>
+              </mat-list-item>
+              <mat-list-item routerLink="/admin/flights">
+                <div  class="slidenav-item">
+                  Reyslər
+                </div>
+              </mat-list-item>
+              <mat-list-item routerLink="/admin/bio">
+                <div  class="slidenav-item">
+                  Bio
+                </div>
+              </mat-list-item>
+              <mat-list-item routerLink="/admin/about-description">
+                <div  class="slidenav-item">
+                  Haqqımızda
+                </div>
+              </mat-list-item>
+              <mat-list-item routerLink="/admin/contact-notice">
+                <div  class="slidenav-item">
+                  Əlagə (bildirişi)
+                </div>
+              </mat-list-item>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <mat-list-item routerLink="/admin/products">
+          <div class="slidenav-item">
+            <i class="far fa-boxes-alt mr-2"></i>
+             Məhsullar
+          </div>
+
+        </mat-list-item>
+        <mat-list-item routerLink="/admin/replies">
+          <div class="slidenav-item">
+            <i class="fas fa-reply-all mr-2"></i>
+            İstifadəçilərin sorğuları
+          </div>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <ng-content>
+      </ng-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+

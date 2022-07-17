@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Business",
+    "\\Business\\Concrete",
+    "\\CamexAPI",
+    "\\CamexAPI\\Controllers",
+    "\\CamexAPI\\obj",
+    "\\Core",
+    "\\Core\\Repository",
+    "\\Core\\Repository\\EntityFramework",
+    "\\Entity"
+  ],
+  "SelectedNode": "\\Core\\Repository\\EntityFramework\\EFRepositoryBase.cs",
+  "PreviewInSolutionExplorer": false
+}

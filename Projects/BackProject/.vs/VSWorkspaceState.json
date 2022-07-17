@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Areas",
+    "\\Areas\\courses-admin",
+    "\\Areas\\courses-admin\\Controllers",
+    "\\Controllers",
+    "\\DAL",
+    "\\Models"
+  ],
+  "SelectedNode": "\\Areas\\courses-admin\\Controllers\\CategoryController.cs",
+  "PreviewInSolutionExplorer": false
+}
